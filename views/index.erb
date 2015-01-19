@@ -1,0 +1,20 @@
+<h1>The Blog that never Blogs!</h1>
+ <a href="/new">Create Blog</a>
+ <ul>
+ <text>Post Name</text>
+<ul>
+	<% @blog.each do |blog|%>
+		<li>
+		<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
+			
+			 </li>
+	<% end %>
+</ul>
+
+<!-- Beginning
+	# Prints header The Blog that never blogs.
+	#creates a hyperlink to /new "Create Blog"
+	Prints post name
+	Lists (each do) Blog post to screen 
+	Creates a hyperlink to each post via blog id, listing blog titles. 
+	Ends.-->

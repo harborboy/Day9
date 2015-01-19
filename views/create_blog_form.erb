@@ -1,0 +1,18 @@
+<h3>Create Blog</h3>
+<a href="/">Back</a>
+
+<form action="/create_blog" method="post">
+	<label>Title</label>
+	<input type="text" name="title">
+	<br>
+	<label>Content</label>
+	
+	<br>
+	<textarea name="content" Rows="10" Cols="50">
+	</textarea>
+	<input type="submit" value="Post">
+</form>
+
+<!-- Prints create blog to header
+	Creates a hyperlink to / index.
+	form action sends title and content to /create_post on the index page via the post method which submits data to be processed. 

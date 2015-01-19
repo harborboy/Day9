@@ -1,0 +1,22 @@
+<text>Post name: </text><%= @blog.title %>
+<br>
+
+<textarea rows="10" cols="50">
+<%= @blog.content %></textarea>
+
+<br>
+
+<form action="/create_blog" method="post">
+	<textarea name="comment" rows="10" cols="50"></textarea>
+	<br>
+	<input type="submit" value="Post">
+</form>
+
+<form action="/delete_blog/<%= @blog.id %>" method="post">
+	<input type="hidden" name="_method" value="delete">
+	<input type="submit" value="Delete">
+	<br>
+	<br>
+<a href="/">Back</a>
+</form>
+
